@@ -6,7 +6,7 @@ if (!requireNamespace("BiocManager", quitely = TRUE)
 	install.pacakages("BiocManager")
 BiocManager::install("gplots", version = "3.8")
 
-library(gplots)
+library(gplots) #Various R Programming Tools for Plotting Data
 
 # installing library RColorBrewer
 
@@ -14,7 +14,7 @@ if (!requireNamespace("BiocManager", quitely = TRUE)
 	install.pacakages("BiocManager")
 BiocManager::install("RColorBrewer", version = "3.8")
 
-library(RColorBrewer)
+library(RColorBrewer) # Provides color schemes for maps (and other graphics)
 
 # data <- read your csv file heatmaps_in_r.csv
 
@@ -84,6 +84,7 @@ cluster = hclust(distance, method = "ward") # this will perform clustering
 cluster # then you will see the cluster data
 
 heatmap.2(mat_data, Rowv = as.dendrogram(cluster),)
+    # dendrogram. provides general functions for handling tree-like structures.
 
 # Following code generates a custom legnd on the heatmap from gplot
 par(lend = 1)           # square line ends for the color legend
